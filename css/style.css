@@ -1,0 +1,61 @@
+@import url('../src/css/_variables.css');
+@import url('../src/css/_base.css');
+@import url('../src/css/_utils.css');
+@import url('../src/css/_animations.css');
+@import url('../src/css/_logo.css');
+@import url('../src/css/_navbar.css');
+@import url('../src/css/_hero.css');
+@import url('../src/css/_btn.css');
+@import url('../src/css/_home.css');
+@import url('../src/css/_contacts.css');
+@import url('../src/css/_footer.css');
+
+/* Estilos do Slider */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.slick-prev {
+  left: 1rem;
+}
+
+.slick-next {
+  right: 1rem;
+}
+
+/* Estilos do Menu Mobile */
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar__links.active {
+    display: block;
+  }
+
+  .navbar__menu-btn {
+    display: block;
+  }
+} 
